@@ -1,10 +1,10 @@
 Un descriptor de archivo es un numero que usa Bash para saber donde leer y donde escribir.
 Cuando un programa se encuentra en ejecución el stdout no se manda directamente a un archivo o a "la pantalla" directamente, sino que el sistema dice:
 
-0 = entrada
-1 = salida
-2 = errores
-3, 4, 5... = descriptores creados por el usuario
+1. 0 = entrada
+2. 1 = salida
+3. 2 = errores
+4. 3, 4, 5... = descriptores creados por el usuario
 
 En el siguiente ejemplo
 
@@ -13,8 +13,8 @@ exec 3<> file
 ```
 
 Se crea un descriptor con numero 3 que esta conectado a file.
-El simbolo < funciona para crearlo con capacidad de lectura
-el simbolo > lo crea con capacidad de escritura
+- El simbolo < funciona para crearlo con capacidad de lectura
+- El simbolo > lo crea con capacidad de escritura
 
 Como si quisieramos mandar el error al "agujero negro", podemos mandar la salida al descriptor 3 de las siguientes maneras
 
