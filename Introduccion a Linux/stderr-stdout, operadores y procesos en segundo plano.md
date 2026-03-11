@@ -33,7 +33,7 @@ En este ejemplo la linea de comando funcionara de la misma manera que el AND, co
 
 ------
 
-# STDOUT (Standard Error)
+# STDOUT (Standard Output) & STDERR (Standard Error)
 
 Podemos manejar la salida por consola de tal manera que si en algun momento necesitamos controlar los errores para no mostrarlos podemos hacerlo de la siguiente manera
 
